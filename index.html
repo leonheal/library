@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="library.css">
+</head>
+
+<body>
+    <h1 align="center"><u>Library</u></h1>
+    <div class="container">
+        <div class="table">
+            <button type="button" id="newBook">New Book</button>
+            <dialog id="modal">
+                <form>
+                    <h1>Book Details</h1>
+                    <label for="title">Title</label>
+                    <input type="text" id="title"> <br>
+                    <label for="author">Author</label>
+                    <input type="text" id="author"> <br>
+                    <label for="pageCount">Page Count</label>
+                    <input type="number" id="pageCount"> <br>
+                    <select name="readStatus" id="readStatus">
+                    <option value="read">Read</option>
+                    <option value="unread" selected>Unread</option>
+                    </select> <br>
+                    <button type="submit" id="addBook">Add Book</button>
+                    <button type="button" id="cancel">Cancel</button>
+                </form>
+            </dialog>
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Page Count</th>
+                    <th>Read Status</th>
+                    <th>Toggle read status</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+    <script src="library.js"></script>
+</body>
+</html>
