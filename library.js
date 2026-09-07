@@ -70,9 +70,6 @@ function addBookToLibrary() {
         let deleteCell = document.createElement("td");
         deleteCell.appendChild(deleteBtn);
 
-        deleteBtn.addEventListener("click", () => {
-            
-        })
 
         row.append(toggleCell, deleteCell);
         table.appendChild(row); 
